@@ -28,7 +28,7 @@ export default function MovieCard({movie}) {
             <div className="card-subtext">Release Date: {movie.release_date}</div>
             <div className="card-subtext">Rating: {movie.vote_average}</div>
             <div className="card-overview">{movie.overview}</div>
-            {reviews.map(review => <Review review={review}/>)}
+            {reviews.slice(0, Math.min(reviews.length, 3)).map(review => <Review review={review}/>)}
         </div>
     )
 }

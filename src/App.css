@@ -76,15 +76,21 @@
 }
 
 .review-header {
-  display: 'flex';
-  align-items: 'center';
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
 }
 
 .review-image {
   width: 48px;
   height: 48px;
+  margin-right: 1rem;
 }
 
 .review {
   margin-bottom: 1.5rem;
+}
+
+.review-created {
+  margin-bottom: 1.2rem;
 }
