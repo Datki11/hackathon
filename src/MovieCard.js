@@ -11,6 +11,7 @@ export default function MovieCard({movie}) {
         const res = await fetch(`https://api.themoviedb.org/3/movie/${movie.id}/reviews?api_key=cb77f8284dc01455ff084869c8c39736`)
         const data = await res.json();
         if (data) {
+            console.log(data.results);
             setReviews(data.results);
         }
     }
